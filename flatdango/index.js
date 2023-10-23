@@ -29,3 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        films.forEach(film => {
+            const filmItem = document.createElement('li');
+            filmItem.textContent = film.title;
+            filmItem.className = 'film-item';
+            filmsList.appendChild(filmItem);
+
