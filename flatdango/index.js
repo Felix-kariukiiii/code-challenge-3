@@ -15,3 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         displayMovieDetails(currentFilm);
 
+        buyTicketButton.addEventListener('click', () => {
+            if (availableTickets > 0) {
+                
+                availableTickets--;
+                currentFilm.tickets_sold++;
+                displayMovieDetails(currentFilm);
+
