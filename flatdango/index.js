@@ -22,3 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentFilm.tickets_sold++;
                 displayMovieDetails(currentFilm);
 
+                if (availableTickets === 0) {
+                    buyTicketButton.textContent = 'Sold Out';
+                    buyTicketButton.classList.add('sold-out');
+                }
+            }
+        });
+
