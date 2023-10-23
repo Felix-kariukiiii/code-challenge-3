@@ -49,6 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch(error => console.error('Error fetching movie data:', error));
 
     function displayMovieDetails(film) {
+        
+        document.getElementById('film-poster').src = film.poster;
+        document.getElementById('film-title').textContent = film.title;
+        document.getElementById('film-runtime').textContent = `Runtime: ${film.runtime} minutes`;
+        document.getElementById('film-showtime').textContent = `Showtime: ${film.showtime}`;
+        document.getElementById('film-tickets').textContent = `Available Tickets: ${availableTickets}`;
+      }
+});
 
 
 
