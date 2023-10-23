@@ -45,5 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
+    })
+    .catch(error => console.error('Error fetching movie data:', error));
+
+    function displayMovieDetails(film) {
+
 
 
