@@ -35,3 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
             filmItem.className = 'film-item';
             filmsList.appendChild(filmItem);
 
+            filmItem.addEventListener('click', () => {
+                currentFilm = film;
+                availableTickets = currentFilm.capacity - currentFilm.tickets_sold;
+                displayMovieDetails(currentFilm);
+
+
