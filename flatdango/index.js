@@ -9,3 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('http://localhost:3000/films')
       .then(response => response.json())
       .then(films => {
+
+        currentFilm = films[0];
+        availableTickets = currentFilm.capacity - currentFilm.tickets_sold;
+
+        displayMovieDetails(currentFilm);
+
