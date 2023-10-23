@@ -40,4 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 availableTickets = currentFilm.capacity - currentFilm.tickets_sold;
                 displayMovieDetails(currentFilm);
 
+                buyTicketButton.textContent = 'Buy Ticket';
+                buyTicketButton.classList.remove('sold-out');
+            });
+        });
+
+
 
